@@ -175,5 +175,12 @@ static const CGFloat kCorner = .25f;
     CGContextDrawPath(context,kCGPathFillStroke);
 }
 
+- (void)reloadChartDataArr:(NSArray *)dataArr
+{
+    _dataArr = dataArr;
+    [self setNeedsLayout];
+    [self layoutIfNeeded];
+}
+
 
 @end

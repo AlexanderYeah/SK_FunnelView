@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithFrame:(CGRect)frame withDataArr:(NSArray *)dataArr;
 
+- (void)reloadChartDataArr:(NSArray *)dataArr;
+
 
 @end
 

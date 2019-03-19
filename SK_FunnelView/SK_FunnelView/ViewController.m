@@ -24,7 +24,6 @@
     model1.color = [UIColor redColor];
     model1.title = @"欧莱雅";
     
-    
     SKFunnelDataModel *model2 = [SKFunnelDataModel new];
     model2.value = 12.f;
     model2.color = [UIColor orangeColor];
@@ -43,6 +42,7 @@
     model5.color = [UIColor redColor];
     model5.title = @"OTHER";
     NSMutableArray *data = [NSMutableArray new];
+    
     [data addObject:model1];
     [data addObject:model2];
     [data addObject:model3];
@@ -51,9 +51,7 @@
     
     
     SKFunnelView *funnelView = [[SKFunnelView alloc]initWithFrame:CGRectMake(0, 64, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame)/2 - 64.f) withDataArr:data];
-    
     [self.view addSubview:funnelView];
-    
     
     
 }
